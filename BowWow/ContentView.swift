@@ -11,10 +11,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
-                })
+                Image("example")
+                
+                Button(action: {
+                    //show a new dog
+                }, label: {
+                    Text("Button")
+                        .padding()
+                        .font(.title2)
+                }).foregroundColor(.white)
+                .background(Color(.blue))
+                .cornerRadius(15)
             }.navigationTitle("Bow WOW!")
+            .padding()
         }
     }
 }
