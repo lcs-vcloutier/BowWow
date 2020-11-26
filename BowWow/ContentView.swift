@@ -11,7 +11,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                })
             }.navigationTitle("Bow WOW!")
         }
     }
