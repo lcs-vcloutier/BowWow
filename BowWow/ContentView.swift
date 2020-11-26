@@ -12,6 +12,9 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Image("example")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
                 
                 Button(action: {
                     //show a new dog
@@ -22,6 +25,7 @@ struct ContentView: View {
                 }).foregroundColor(.white)
                 .background(Color(.blue))
                 .cornerRadius(15)
+                Spacer()
             }.navigationTitle("Bow WOW!")
             .padding()
         }
